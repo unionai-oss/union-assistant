@@ -26,7 +26,7 @@ def download_files(url, path):
             download_files(file_info['url'], new_path)
 
 # 起始URL
-start_url = "https://api.github.com/repos/flyteorg/flyte/contents/rfc?ref=master"
-start_path = "rfc"
+start_url = "https://api.github.com/repos/flyteorg/flyte/contents/docs?ref=master"
+start_path = "docs"
 os.makedirs(start_path, exist_ok=True)
 download_files(start_url, start_path)

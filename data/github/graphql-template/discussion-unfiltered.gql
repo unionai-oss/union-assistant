@@ -1,0 +1,33 @@
+query {
+  repository(owner: "flyteorg", name: "flyte") {
+    discussions(first: 10) {
+      totalCount
+      pageInfo {
+        startCursor
+        endCursor
+        hasNextPage
+        hasPreviousPage
+      }
+      edges {
+        cursor
+        node {
+          id
+          title
+          body
+          author {
+            login
+          }
+          comments(first: 10) {
+            totalCount
+            nodes {
+              author {
+                login
+              }
+              body
+            }
+          }
+        }
+      }
+    }
+  }
+}

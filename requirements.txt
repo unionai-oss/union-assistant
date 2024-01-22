@@ -1,3 +1,4 @@
 youtube_transcript_api==0.6.1
 pytube==15.0.0
 scrapetube==2.5.1
+gql[all]

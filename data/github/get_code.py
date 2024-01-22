@@ -10,7 +10,8 @@ def extract_repo_name(repo_url: str) -> str:
 repo_urls = ["https://github.com/flyteorg/flyte",
              "https://github.com/flyteorg/flytectl",
              "https://github.com/flyteorg/flytekit",
-             "https://github.com/flyteorg/flyteconsole",]
+             "https://github.com/flyteorg/flyteconsole",
+             "https://github.com/flyteorg/flytekit-java"]
 
 for repo_url in repo_urls:
     repo_name = extract_repo_name(repo_url)

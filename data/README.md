@@ -7,6 +7,7 @@
     - contribute
 - Flyte Github
     - [Discussion Q & A](https://github.com/flyteorg/flyte/discussions/categories/q-a?discussions_q=is%3Aopen+category%3AQ%26A+is%3Aanswered)
+    - Every PR's description
     - datacatalog
     - flytecopilot
     - flytestdlib

@@ -1,0 +1,14 @@
+autoflake
+flytekit
+black
+coverage
+flake8
+pre-commit
+flake8-black
+flake8-isort
+codespell
+isort
+mock
+pytest
+mypy
+mashumaro

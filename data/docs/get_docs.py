@@ -2,7 +2,11 @@ import requests
 import os
 
 def download_files(url, path):
-    response = requests.get(url)
+    headers = {
+        'Authorization': f'token {os.getenv("GITHUB_ACCESS_TOKEN")}'
+    }
+
+    response = requests.get(url, headers=headers)
     data = response.json()
 
     if isinstance(data, dict) and data.get('message') == 'Not Found':
@@ -12,7 +16,7 @@ def download_files(url, path):
     for file_info in data:
         if file_info['type'] == 'file':
             download_url = file_info['download_url']
-            file_response = requests.get(download_url)
+            file_response = requests.get(download_url, headers=headers)
             file_path = os.path.join(path, file_info['name'])
 
             # 寫入檔案

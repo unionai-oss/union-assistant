@@ -20,9 +20,9 @@
     - flyteconsole
     - flytekit-java
 - Flyte Docs
-    - [flyte docs](https://github.com/flyteorg/flyte/tree/master/docs)
-    - [flytesnacks](https://github.com/flyteorg/flytesnacks)
-    - [flyte RFC](https://github.com/flyteorg/flyte/tree/master/rfc)
+    - [flyte docs](https://github.com/flyteorg/flyte/tree/master/docs) (Mainly Docs)
+    - [flytesnacks](https://github.com/flyteorg/flytesnacks) (Integration Docs)
+    - [flyte RFC](https://github.com/flyteorg/flyte/tree/master/rfc) (System Design Docs)
 
 # TODO
 - Break down in more detail what problems the data is used to solve.
